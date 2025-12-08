@@ -1,0 +1,164 @@
+nohup: ignoring input
+
+2025/12/07 09:51:52 [32mC:/go-work/uas_manpro/news-shared-service/cmd/server/main.go:28
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/12/07 09:51:52 [32mC:/go-work/uas_manpro/news-shared-service/cmd/server/main.go:28
+[0m[33m[4.783ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'news_db%' ORDER BY SCHEMA_NAME='news_db' DESC,SCHEMA_NAME limit 1
+
+2025/12/07 09:51:52 [32mC:/go-work/uas_manpro/news-shared-service/cmd/server/main.go:28
+[0m[33m[4.485ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'news_db' AND table_name = 'news' AND table_type = 'BASE TABLE'
+
+2025/12/07 09:51:52 [32m
+[0m[33m[0.702ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/12/07 09:51:52 [32mC:/go-work/uas_manpro/news-shared-service/cmd/server/main.go:28
+[0m[33m[1.057ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'news_db%' ORDER BY SCHEMA_NAME='news_db' DESC,SCHEMA_NAME limit 1
+
+2025/12/07 09:51:52 [32mC:/go-work/uas_manpro/news-shared-service/cmd/server/main.go:28
+[0m[33m[1.239ms] [34;1m[rows:-][0m SELECT * FROM `news` LIMIT 1
+
+2025/12/07 09:51:52 [32mC:/go-work/uas_manpro/news-shared-service/cmd/server/main.go:28
+[0m[33m[4.280ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'news_db' AND table_name = 'news' ORDER BY ORDINAL_POSITION
+
+2025/12/07 09:51:52 [32mC:/go-work/uas_manpro/news-shared-service/cmd/server/main.go:28
+[0m[33m[0.506ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/12/07 09:51:52 [32mC:/go-work/uas_manpro/news-shared-service/cmd/server/main.go:28
+[0m[33m[1.113ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'news_db%' ORDER BY SCHEMA_NAME='news_db' DESC,SCHEMA_NAME limit 1
+
+2025/12/07 09:51:52 [32mC:/go-work/uas_manpro/news-shared-service/cmd/server/main.go:28
+[0m[33m[2.258ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'news_db' AND table_name = 'categories' AND table_type = 'BASE TABLE'
+
+2025/12/07 09:51:52 [32m
+[0m[33m[0.636ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/12/07 09:51:52 [32mC:/go-work/uas_manpro/news-shared-service/cmd/server/main.go:28
+[0m[33m[2.050ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'news_db%' ORDER BY SCHEMA_NAME='news_db' DESC,SCHEMA_NAME limit 1
+
+2025/12/07 09:51:52 [32mC:/go-work/uas_manpro/news-shared-service/cmd/server/main.go:28
+[0m[33m[1.068ms] [34;1m[rows:-][0m SELECT * FROM `categories` LIMIT 1
+
+2025/12/07 09:51:52 [32mC:/go-work/uas_manpro/news-shared-service/cmd/server/main.go:28
+[0m[33m[1.645ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'news_db' AND table_name = 'categories' ORDER BY ORDINAL_POSITION
+
+2025/12/07 09:51:52 [32m
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/12/07 09:51:52 [32m
+[0m[33m[2.419ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'news_db%' ORDER BY SCHEMA_NAME='news_db' DESC,SCHEMA_NAME limit 1
+
+2025/12/07 09:51:52 [32m
+[0m[33m[2.517ms] [34;1m[rows:2][0m 
+SELECT
+	TABLE_NAME,
+	COLUMN_NAME,
+	INDEX_NAME,
+	NON_UNIQUE 
+FROM
+	information_schema.STATISTICS 
+WHERE
+	TABLE_SCHEMA = 'news_db' 
+	AND TABLE_NAME = 'categories' 
+ORDER BY
+	INDEX_NAME,
+	SEQ_IN_INDEX
+
+2025/12/07 09:51:52 [32m
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/12/07 09:51:52 [32m
+[0m[33m[0.873ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'news_db%' ORDER BY SCHEMA_NAME='news_db' DESC,SCHEMA_NAME limit 1
+
+2025/12/07 09:51:52 [32m
+[0m[33m[1.682ms] [34;1m[rows:-][0m SELECT count(*) FROM INFORMATION_SCHEMA.table_constraints WHERE constraint_schema = 'news_db' AND table_name = 'categories' AND constraint_name = 'uni_categories_name'
+
+2025/12/07 09:51:52 [32mC:/go-work/uas_manpro/news-shared-service/cmd/server/main.go:28
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/12/07 09:51:52 [32mC:/go-work/uas_manpro/news-shared-service/cmd/server/main.go:28
+[0m[33m[1.476ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'news_db%' ORDER BY SCHEMA_NAME='news_db' DESC,SCHEMA_NAME limit 1
+
+2025/12/07 09:51:52 [32mC:/go-work/uas_manpro/news-shared-service/cmd/server/main.go:28
+[0m[33m[1.463ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'news_db' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2025/12/07 09:51:52 [32m
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/12/07 09:51:52 [32mC:/go-work/uas_manpro/news-shared-service/cmd/server/main.go:28
+[0m[33m[1.113ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'news_db%' ORDER BY SCHEMA_NAME='news_db' DESC,SCHEMA_NAME limit 1
+
+2025/12/07 09:51:52 [32mC:/go-work/uas_manpro/news-shared-service/cmd/server/main.go:28
+[0m[33m[0.518ms] [34;1m[rows:-][0m SELECT * FROM `users` LIMIT 1
+
+2025/12/07 09:51:52 [32mC:/go-work/uas_manpro/news-shared-service/cmd/server/main.go:28
+[0m[33m[1.266ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'news_db' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2025/12/07 09:51:52 [32m
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/12/07 09:51:52 [32m
+[0m[33m[1.489ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'news_db%' ORDER BY SCHEMA_NAME='news_db' DESC,SCHEMA_NAME limit 1
+
+2025/12/07 09:51:52 [32m
+[0m[33m[2.049ms] [34;1m[rows:2][0m 
+SELECT
+	TABLE_NAME,
+	COLUMN_NAME,
+	INDEX_NAME,
+	NON_UNIQUE 
+FROM
+	information_schema.STATISTICS 
+WHERE
+	TABLE_SCHEMA = 'news_db' 
+	AND TABLE_NAME = 'users' 
+ORDER BY
+	INDEX_NAME,
+	SEQ_IN_INDEX
+
+2025/12/07 09:51:52 [32m
+[0m[33m[0.542ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/12/07 09:51:52 [32m
+[0m[33m[1.987ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'news_db%' ORDER BY SCHEMA_NAME='news_db' DESC,SCHEMA_NAME limit 1
+
+2025/12/07 09:51:52 [32m
+[0m[33m[1.859ms] [34;1m[rows:-][0m SELECT count(*) FROM INFORMATION_SCHEMA.table_constraints WHERE constraint_schema = 'news_db' AND table_name = 'users' AND constraint_name = 'uni_users_username'
+
+2025/12/07 09:51:52 [32mC:/go-work/uas_manpro/news-shared-service/internal/repository/user_repo.go:24
+[0m[33m[0.505ms] [34;1m[rows:1][0m SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /health                   --> news-shared-service/internal/handlers.HealthCheck (4 handlers)
+[GIN-debug] GET    /news/                    --> news-shared-service/internal/handlers.(*NewsHandler).GetAllNews-fm (4 handlers)
+[GIN-debug] GET    /news/:id                 --> news-shared-service/internal/handlers.(*NewsHandler).GetNews-fm (4 handlers)
+[GIN-debug] POST   /news/                    --> news-shared-service/internal/handlers.(*NewsHandler).CreateNews-fm (5 handlers)
+[GIN-debug] PUT    /news/:id                 --> news-shared-service/internal/handlers.(*NewsHandler).UpdateNews-fm (5 handlers)
+[GIN-debug] DELETE /news/:id                 --> news-shared-service/internal/handlers.(*NewsHandler).DeleteNews-fm (5 handlers)
+[GIN-debug] GET    /categories/              --> news-shared-service/internal/handlers.(*CategoryHandler).GetCategories-fm (4 handlers)
+[GIN-debug] POST   /categories/              --> news-shared-service/internal/handlers.(*CategoryHandler).CreateCategory-fm (5 handlers)
+[GIN-debug] POST   /auth/login               --> news-shared-service/internal/handlers.(*AuthHandler).Login-fm (4 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN] 2025/12/07 - 09:52:10 | 404 |            0s |             ::1 | POST     "/api/auth/login"
+
+2025/12/07 09:52:19 [32mC:/go-work/uas_manpro/news-shared-service/internal/repository/user_repo.go:24
+[0m[33m[1.442ms] [34;1m[rows:1][0m SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+[GIN] 2025/12/07 - 09:52:19 | 200 |     73.8926ms |             ::1 | POST     "/auth/login"
+
+2025/12/07 09:52:33 [32mC:/go-work/uas_manpro/news-shared-service/internal/repository/user_repo.go:24
+[0m[33m[0.509ms] [34;1m[rows:1][0m SELECT * FROM `users` WHERE username = 'admin' ORDER BY `users`.`id` LIMIT 1
+[GIN] 2025/12/07 - 09:52:33 | 200 |     69.7514ms |             ::1 | POST     "/auth/login"
+
+2025/12/07 09:52:43 [32mC:/go-work/uas_manpro/news-shared-service/internal/repository/news_repo.go:30
+[0m[33m[5.603ms] [34;1m[rows:1][0m INSERT INTO `news` (`id`,`title`,`content`,`author`,`category`,`image`,`source_url`,`display_section`,`archived`,`created_at`,`updated_at`) VALUES ('7712779a-b787-45d9-a451-60f7170e7d1d','Test News from CLI','This is a test created from automated test.','CLI','General','','','snackmix',false,'2025-12-07 02:52:43.625','2025-12-07 02:52:43.684')
+[GIN] 2025/12/07 - 09:52:43 | 201 |       7.669ms |             ::1 | POST     "/news/"
+
+2025/12/07 09:52:47 [32mC:/go-work/uas_manpro/news-shared-service/internal/repository/news_repo.go:43
+[0m[33m[6.275ms] [34;1m[rows:4][0m SELECT * FROM `news`
+[GIN] 2025/12/07 - 09:52:47 | 200 |      9.4001ms |             ::1 | GET      "/news/"
