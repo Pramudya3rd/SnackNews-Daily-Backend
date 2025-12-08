@@ -35,7 +35,7 @@ This project implements a shared service for managing news and categories using 
 1. **Clone the repository**:
    ```
    git clone <repository-url>
-   cd SnackNews-daily-backend
+   cd SnackNews-Daily-Backend
    ```
 
 2. **Install dependencies**:
