@@ -1,4 +1,4 @@
-# News Shared Service
+# SnackNews Daily Service
 
 This project implements a shared service for managing news and categories using the Gin framework in Go. It provides a RESTful API for interacting with news items and categories, along with middleware for request processing.
 
@@ -35,7 +35,7 @@ This project implements a shared service for managing news and categories using 
 1. **Clone the repository**:
    ```
    git clone <repository-url>
-   cd news-shared-service
+   cd SnackNews-Daily-Backend
    ```
 
 2. **Install dependencies**:
@@ -62,11 +62,3 @@ This project implements a shared service for managing news and categories using 
 - **Categories**:
   - `GET /categories`
   - `POST /categories`
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
