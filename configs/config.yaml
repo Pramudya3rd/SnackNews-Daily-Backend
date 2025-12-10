@@ -2,8 +2,8 @@ database:
   host: localhost
   port: 3306
   user: root
-  password:
-  name: news_db
+  password: "" # Laragon default: no password
+  name: news_app # Match dengan .env DATABASE_URL
 
 server:
   port: 8080

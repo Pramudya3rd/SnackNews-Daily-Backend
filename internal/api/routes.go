@@ -32,6 +32,7 @@ func SetupRoutes(router *gin.Engine, newsService *service.NewsService, categoryS
     router.GET("/health", handlers.HealthCheck)
 
     newsHandler := handlers.NewNewsHandler(newsService)
+    uploadHandler := handlers.NewUploadHandler()
 
     // API v1 routes with /api prefix
     apiGroup := router.Group("/api")
@@ -56,6 +57,17 @@ func SetupRoutes(router *gin.Engine, newsService *service.NewsService, categoryS
             categoriesGroup.GET("/", categoryHandler.GetCategories)
             // protect category creation
             categoriesGroup.POST("/", AuthMiddleware(authService), categoryHandler.CreateCategory)
+        }
+
+        // Upload endpoints
+        uploadsGroup := apiGroup.Group("/uploads")
+        {
+            // Image upload endpoint (protected)
+            uploadsGroup.POST("/images", AuthMiddleware(authService), uploadHandler.UploadImage)
+            // Serve images (public)
+            uploadsGroup.GET("/images/:filename", uploadHandler.ServeImage)
+            // Delete image endpoint (protected)
+            uploadsGroup.DELETE("/images/:filename", AuthMiddleware(authService), uploadHandler.DeleteImage)
         }
 
         // Auth endpoints
